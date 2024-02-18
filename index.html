@@ -575,27 +575,30 @@
 
             <!-- price-count -->
             <div class="price-count-container bg-[#F7F8F8] rounded-3xl">
+
               <div class="seat-class-price flex justify-around mt-16">
                 <h3>Seat <span id="seat-plus-count" class="text-[#1DD100] font-bold">0</span></h3>
                 <h3>Class</h3>
                 <h3>Price</h3>
               </div>
-
-              <div class="seat-class-price flex justify-around mt-16">
+<!-- daynamic seeat count -->
+          <div class="price-container">
+            <div id="seat-dynamic-price" class=" grid grid-cols-3 ">
+              <!-- <h3>C2 <span class="">2</span></h3> -->
+             <!-- // <h3>Economoy</h3> -->
+              <!-- <h3>550</h3> -->
+            </div>
+          </div>
+              <!-- <div class="seat-class-price flex justify-around mt-16 hidden">
                 <h3>C2 <span class="">2</span></h3>
                 <h3>Economoy</h3>
                 <h3>550</h3>
-              </div>
-              <div class="seat-class-price flex justify-around mt-16">
-                <h3>C2 <span class="">2</span></h3>
-                <h3>Economoy</h3>
-                <h3>550</h3>
-              </div>
+              </div> -->
               <hr />
-              <div class="seat-class-price flex justify-around mt-16">
+              <div class="seat-class-price flex justify-around mt-16  ">
                 <h3>Total Price</h3>
 
-                <h3>BDT: <span>1100</span></h3>
+                <h3>BDT: <span id="total-taka">1100</span></h3>
               </div>
               <div class="seat-class-price flex mt-16">
                 <input
@@ -612,7 +615,7 @@
               <div class="seat-class-price flex justify-around mt-16">
                 <h3>GrandTotal</h3>
 
-                <h3>BDT: <span>1100</span></h3>
+                <h3>BDT: <span id="grand-taka">1100</span></h3>
               </div>
             </div>
             <!-- contactt-section -->
@@ -627,24 +630,41 @@
               />
               <h3 class="mb-4">Phone Number*</h3>
               <input
-                type="text"
+                type="number"
                 placeholder="Enter your phone number"
                 class="input - bg-white border-[#03071266] text-black w-full max-w-xs h-[60px]"
                 mt-4
               />
               <h3 class="mb-4">Email ID*</h3>
               <input
-                type="text"
+                type="email"
                 placeholder="Enter your email id"
                 class="input - bg-white border-[#03071266] text-black w-full max-w-xs h-[60px]"
                 mt-4
               />
-              <div class="next-btn mt-4">
-                <button
+              <div class="next-btn mt-4 mb-4">
+                <!-- <button
                   class="btn btn-wide bg-[#1DD100] border-none outline-none text-white font-[24px]"
                 >
-                  Next
-                </button>
+        
+                </button> -->
+
+<!-- The button to open modal -->
+<a href="#my_modal_8" class="btn btn-wide bg-[#1DD100] border-none outline-none text-white font-[24px] ">   Next</a>
+
+<div class="modal" role="dialog" id="my_modal_8">
+  <div class="modal-box">
+    <h3 class="font-bold text-lg">Hello!</h3>
+    <p class="py-4">This modal works with anchor links</p>
+    <div class="modal-action">
+     <a href="#" class="btn">Yay!</a>
+    </div>
+  </div>
+</div>
+
+
+
+
               </div>
 
               <div class="condition-policy flex justify-around">
