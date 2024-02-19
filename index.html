@@ -181,7 +181,7 @@
 
       <section
         id="phPoribahan"
-        class="poribohon-section  bg-[#F7F8F8] border-2 rounded-[70px] border-green-500 lg:p-16"
+        class="poribohon-section  bg-[#F7F8F8] border-2 rounded-[70px] border-green-500 lg:p-16 border-r-0 border-l-0 border-b-0"
       >
         <div class="container mx-auto">
           <div class="shared-title text-center">
@@ -250,306 +250,311 @@
       <!-- ===================================================
                   TICKET_SECTION
 ===============================================================-->
-<section class="ticket-section mt-16">
-  <div class="container mx-auto grid grid-cols-2">
-    <div class="ticket-left">
-      <h1>Select Your Seat</h1>
-      <div class="selected-item grid grid-cols-2 mt-4">
-        <div class="selected-left flex gap-4">
+<section class="ticket-section mt-16 bg-white rounded-md p-4 ">
+  <div class="container mx-auto grid grid-cols-2 gap-4">
+    <div class="ticket-left border-r-2 border-dashed p-6 ">
+      <h1 class="font-semibold mb-8 text-2xl border-b-2 border-dashed pb-8 ">Select Your Seat</h1>
+      <div class="selected-item flex justify-between mt-4 border-b-2 border-dashed pb-8">
+        <div class="selected-left flex gap-4 ">
           <img src="./images/seat-gray.png" alt="" />
-          <h4>Available</h4>
+          <h4 class="font-semibold ">Available</h4>
         </div>
         <div class="selected-right flex gap-4">
           <img src="./images/seat-green-filled.png" alt="" />
-          <h4 class="">Available</h4>
+          <h4 class="font-semibold text-green-500">Available</h4>
         </div>
       </div>
 
       <!-- stading -->
-      <div class="stading text-end mt-4">
-        <i class="fa-solid fa-shop"></i>
+      <div class="stading text-end mt-4 ">
+        <button
+        class=" add-select my-4 bg-[#F7F8F8] border-none text-[#03071280] font-bold w-[100px] h-[64px] "
+      >
+      <i class="fa-regular fa-circle-dot text-center text-2xl "></i>
+      </button>
+
       </div>
       <div class="tickt-add-container mt-4">
-        <div class="add-btn flex gap-4 mb-4">
+        <div class="add-btn grid grid-cols-5 gap-4 mb-4">
           <button
-            class="border-none text-[#03071280] font-bold w-[80px] h-[44px] ml-6"
+            class="border-none text-[#03071280] font-bold w-[90px] h-[54px]"
           >
             A
           </button>
 
           <button
-            class="add-select bg-[#F7F8F8] border-none text-[#03071280] font-bold w-[80px] h-[44px] ml-6"
+            class="add-select bg-[#F7F8F8] border-none text-[#03071280] font-bold w-[90px] h-[54px] "
           >
             A <span>1</span>
           </button>
           <button
-            class="add-select bg-[#F7F8F8] border-none text-[#03071280] font-bold w-[80px] h-[44px] ml-6"
+            class="add-select bg-[#F7F8F8] border-none text-[#03071280] font-bold w-[90px] h-[54px] "
           >
             A <span>2</span>
           </button>
           <button
-            class="add-select bg-[#F7F8F8] border-none text-[#03071280] font-bold w-[80px] h-[44px] ml-6"
+            class="add-select bg-[#F7F8F8] border-none text-[#03071280] font-bold w-[90px] h-[54px] "
           >
             A <span>3</span>
           </button>
           <button
-            class="add-select bg-[#F7F8F8] border-none text-[#03071280] font-bold w-[80px] h-[44px] ml-6"
+            class="add-select bg-[#F7F8F8] border-none text-[#03071280] font-bold w-[90px] h-[54px] "
           >
             A <span>4</span>
           </button>
         </div>
-        <div class="add-btn flex gap-4 mb-4">
+        <div class="add-btn  grid grid-cols-5 gap-4 mb-4">
           <button
-            class="border-none text-[#03071280] font-bold w-[80px] h-[44px] ml-6"
+            class="border-none text-[#03071280] font-bold w-[90px] h-[54px]"
           >
             B
           </button>
 
           <button
-            class="add-select bg-[#F7F8F8] border-none text-[#03071280] font-bold w-[80px] h-[44px] ml-6"
+            class="add-select bg-[#F7F8F8] border-none text-[#03071280] font-bold w-[90px] h-[54px]"
           >
             B
             <span>1</span>
           </button>
           <button
-            class="add-select bg-[#F7F8F8] border-none text-[#03071280] font-bold w-[80px] h-[44px] ml-6"
+            class="add-select bg-[#F7F8F8] border-none text-[#03071280] font-bold w-[90px] h-[54px]"
           >
             B
             <span>2</span>
           </button>
           <button
-            class="add-select bg-[#F7F8F8] border-none text-[#03071280] font-bold w-[80px] h-[44px] ml-6"
+            class="add-select bg-[#F7F8F8] border-none text-[#03071280] font-bold w-[90px] h-[54px]"
           >
             B
             <span>3</span>
           </button>
           <button
-            class="add-select bg-[#F7F8F8] border-none text-[#03071280] font-bold w-[80px] h-[44px] ml-6"
+            class="add-select bg-[#F7F8F8] border-none text-[#03071280] font-bold w-[90px] h-[54px]"
           >
             B
             <span>4</span>
           </button>
         </div>
-        <div class="add-btn flex gap-4 mb-4">
+        <div class="add-btn grid grid-cols-5 gap-4 mb-4">
           <button
-            class="border-none text-[#03071280] font-bold w-[80px] h-[44px] ml-6"
+            class="border-none text-[#03071280] font-bold w-[90px] h-[54px]"
           >
             C
           </button>
 
           <button
-            class="add-select bg-[#F7F8F8] border-none text-[#03071280] font-bold w-[80px] h-[44px] ml-6"
+            class="add-select bg-[#F7F8F8] border-none text-[#03071280] font-bold w-[90px] h-[54px]"
           >
             C <span>1</span>
           </button>
           <button
-            class="add-select bg-[#F7F8F8] border-none text-[#03071280] font-bold w-[80px] h-[44px] ml-6"
+            class="add-select bg-[#F7F8F8] border-none text-[#03071280] font-bold w-[90px] h-[54px]"
           >
             C <span>2</span>
           </button>
           <button
-            class="add-select bg-[#F7F8F8] border-none text-[#03071280] font-bold w-[80px] h-[44px] ml-6"
+            class="add-select bg-[#F7F8F8] border-none text-[#03071280] font-bold w-[90px] h-[54px]"
           >
             C<span>3</span>
           </button>
           <button
-            class="add-select bg-[#F7F8F8] border-none text-[#03071280] font-bold w-[80px] h-[44px] ml-6"
+            class="add-select bg-[#F7F8F8] border-none text-[#03071280] font-bold w-[90px] h-[54px]"
           >
             C<span>4</span>
           </button>
         </div>
-        <div class="add-btn flex gap-4 mb-4">
+        <div class="add-btn  grid grid-cols-5 gap-4 mb-4">
           <button
-            class="border-none text-[#03071280] font-bold w-[80px] h-[44px] ml-6"
+            class="border-none text-[#03071280] font-bold w-[90px] h-[54px]"
           >
             D
           </button>
 
           <button
-            class="add-select bg-[#F7F8F8] border-none text-[#03071280] font-bold w-[80px] h-[44px] ml-6"
+            class="add-select bg-[#F7F8F8] border-none text-[#03071280] font-bold w-[90px] h-[54px]"
           >
             D <span>1</span>
           </button>
           <button
-            class="add-select bg-[#F7F8F8] border-none text-[#03071280] font-bold w-[80px] h-[44px] ml-6"
+            class="add-select bg-[#F7F8F8] border-none text-[#03071280] font-bold w-[90px] h-[54px]"
           >
             D <span>2</span>
           </button>
           <button
-            class="add-select bg-[#F7F8F8] border-none text-[#03071280] font-bold w-[80px] h-[44px] ml-6"
+            class="add-select bg-[#F7F8F8] border-none text-[#03071280] font-bold w-[90px] h-[54px]"
           >
             D <span>3</span>
           </button>
           <button
-            class="add-select bg-[#F7F8F8] border-none text-[#03071280] font-bold w-[80px] h-[44px] ml-6"
+            class="add-select bg-[#F7F8F8] border-none text-[#03071280] font-bold w-[90px] h-[54px]"
           >
             D <span>4</span>
           </button>
         </div>
-        <div class="add-btn flex gap-4 mb-4">
+        <div class="add-btn  grid grid-cols-5 gap-4 mb-4">
           <button
-            class="border-none text-[#03071280] font-bold w-[80px] h-[44px] ml-6"
+            class="border-none text-[#03071280] font-bold w-[90px] h-[54px]"
           >
             E
           </button>
 
           <button
-            class="add-select bg-[#F7F8F8] border-none text-[#03071280] font-bold w-[80px] h-[44px] ml-6"
+            class="add-select bg-[#F7F8F8] border-none text-[#03071280] font-bold w-[90px] h-[54px]"
           >
             E<span>1</span>
           </button>
           <button
-            class="add-select bg-[#F7F8F8] border-none text-[#03071280] font-bold w-[80px] h-[44px] ml-6"
+            class="add-select bg-[#F7F8F8] border-none text-[#03071280] font-bold w-[90px] h-[54px]"
           >
             E<span>2</span>
           </button>
           <button
-            class="add-select bg-[#F7F8F8] border-none text-[#03071280] font-bold w-[80px] h-[44px] ml-6"
+            class="add-select bg-[#F7F8F8] border-none text-[#03071280] font-bold w-[90px] h-[54px]"
           >
             E <span>3</span>
           </button>
           <button
-            class="add-select bg-[#F7F8F8] border-none text-[#03071280] font-bold w-[80px] h-[44px] ml-6"
+            class="add-select bg-[#F7F8F8] border-none text-[#03071280] font-bold w-[90px] h-[54px]"
           >
             E<span>4</span>
           </button>
         </div>
-        <div class="add-btn flex gap-4 mb-4">
+        <div class="add-btn  grid grid-cols-5 gap-4 mb-4">
           <button
-            class="border-none text-[#03071280] font-bold w-[80px] h-[44px] ml-6"
+            class="border-none text-[#03071280] font-bold w-[90px] h-[54px]"
           >
             F
           </button>
 
           <button
-            class="add-select bg-[#F7F8F8] border-none text-[#03071280] font-bold w-[80px] h-[44px] ml-6"
+            class="add-select bg-[#F7F8F8] border-none text-[#03071280] font-bold w-[90px] h-[54px]"
           >
             F <span>1</span>
           </button>
           <button
-            class="add-select bg-[#F7F8F8] border-none text-[#03071280] font-bold w-[80px] h-[44px] ml-6"
+            class="add-select bg-[#F7F8F8] border-none text-[#03071280] font-bold w-[90px] h-[54px]"
           >
             F <span>2</span>
           </button>
           <button
-            class="add-select bg-[#F7F8F8] border-none text-[#03071280] font-bold w-[80px] h-[44px] ml-6"
+            class="add-select bg-[#F7F8F8] border-none text-[#03071280] font-bold w-[90px] h-[54px]"
           >
             F <span>3</span>
           </button>
           <button
-            class="add-select bg-[#F7F8F8] border-none text-[#03071280] font-bold w-[80px] h-[44px] ml-6"
+            class="add-select bg-[#F7F8F8] border-none text-[#03071280] font-bold w-[90px] h-[54px]"
           >
             F <span>4</span>
           </button>
         </div>
-        <div class="add-btn flex gap-4 mb-4">
+        <div class="add-btn  grid grid-cols-5 gap-4 mb-4">
           <button
-            class="border-none text-[#03071280] font-bold w-[80px] h-[44px] ml-6"
+            class="border-none text-[#03071280] font-bold w-[90px] h-[54px]"
           >
             G
           </button>
 
           <button
-            class="add-select bg-[#F7F8F8] border-none text-[#03071280] font-bold w-[80px] h-[44px] ml-6"
+            class="add-select bg-[#F7F8F8] border-none text-[#03071280] font-bold w-[90px] h-[54px]"
           >
             G <span>1</span>
           </button>
           <button
-            class="add-select bg-[#F7F8F8] border-none text-[#03071280] font-bold w-[80px] h-[44px] ml-6"
+            class="add-select bg-[#F7F8F8] border-none text-[#03071280] font-bold w-[90px] h-[54px]"
           >
             G <span>2</span>
           </button>
           <button
-            class="add-select bg-[#F7F8F8] border-none text-[#03071280] font-bold w-[80px] h-[44px] ml-6"
+            class="add-select bg-[#F7F8F8] border-none text-[#03071280] font-bold w-[90px] h-[54px]"
           >
             G<span>3</span>
           </button>
           <button
-            class="add-select bg-[#F7F8F8] border-none text-[#03071280] font-bold w-[80px] h-[44px] ml-6"
+            class="add-select bg-[#F7F8F8] border-none text-[#03071280] font-bold w-[90px] h-[54px]"
           >
             G <span>4</span>
           </button>
         </div>
-        <div class="add-btn flex gap-4 mb-4">
+        <div class="add-btn  grid grid-cols-5 gap-4 mb-4">
           <button
-            class="border-none text-[#03071280] font-bold w-[80px] h-[44px] ml-6"
+            class="border-none text-[#03071280] font-bold w-[90px] h-[54px]"
           >
             H
           </button>
 
           <button
-            class="add-select bg-[#F7F8F8] border-none text-[#03071280] font-bold w-[80px] h-[44px] ml-6"
+            class="add-select bg-[#F7F8F8] border-none text-[#03071280] font-bold w-[90px] h-[54px]"
           >
             H <span>1</span>
           </button>
           <button
-            class="add-select bg-[#F7F8F8] border-none text-[#03071280] font-bold w-[80px] h-[44px] ml-6"
+            class="add-select bg-[#F7F8F8] border-none text-[#03071280] font-bold w-[90px] h-[54px]"
           >
             H<span>2</span>
           </button>
           <button
-            class="add-select bg-[#F7F8F8] border-none text-[#03071280] font-bold w-[80px] h-[44px] ml-6"
+            class="add-select bg-[#F7F8F8] border-none text-[#03071280] font-bold w-[90px] h-[54px]"
           >
             H <span>3</span>
           </button>
           <button
-            class="add-select bg-[#F7F8F8] border-none text-[#03071280] font-bold w-[80px] h-[44px] ml-6"
+            class="add-select bg-[#F7F8F8] border-none text-[#03071280] font-bold w-[90px] h-[54px]"
           >
             H<span>4</span>
           </button>
         </div>
-        <div class="add-btn flex gap-4 mb-4">
+        <div class="add-btn  grid grid-cols-5 gap-4 mb-4">
           <button
-            class="border-none text-[#03071280] font-bold w-[80px] h-[44px] ml-6"
+            class="border-none text-[#03071280] font-bold w-[90px] h-[54px]"
           >
             I
           </button>
 
           <button
-            class="add-select bg-[#F7F8F8] border-none text-[#03071280] font-bold w-[80px] h-[44px] ml-6"
+            class="add-select bg-[#F7F8F8] border-none text-[#03071280] font-bold w-[90px] h-[54px]"
           >
             I <span>1</span>
           </button>
           <button
-            class="add-select bg-[#F7F8F8] border-none text-[#03071280] font-bold w-[80px] h-[44px] ml-6"
+            class="add-select bg-[#F7F8F8] border-none text-[#03071280] font-bold w-[90px] h-[54px]"
           >
             I<span>2</span>
           </button>
           <button
-            class="add-select bg-[#F7F8F8] border-none text-[#03071280] font-bold w-[80px] h-[44px] ml-6"
+            class="add-select bg-[#F7F8F8] border-none text-[#03071280] font-bold w-[90px] h-[54px]"
           >
             I <span>3</span>
           </button>
           <button
-            class="add-select bg-[#F7F8F8] border-none text-[#03071280] font-bold w-[80px] h-[44px] ml-6"
+            class="add-select bg-[#F7F8F8] border-none text-[#03071280] font-bold w-[90px] h-[54px]"
           >
             I <span>4</span>
           </button>
         </div>
-        <div class="add-btn flex gap-4 mb-4">
+        <div class="add-btn  grid grid-cols-5 gap-4 mb-4">
           <button
-            class="border-none text-[#03071280] font-bold w-[80px] h-[44px] ml-6"
+            class="border-none text-[#03071280] font-bold w-[90px] h-[54px]"
           >
             J
           </button>
 
           <button
-            class="add-select bg-[#F7F8F8] border-none text-[#03071280] font-bold w-[80px] h-[44px] ml-6"
+            class="add-select bg-[#F7F8F8] border-none text-[#03071280] font-bold w-[90px] h-[54px]"
           >
             J<span>1</span>
           </button>
           <button
-            class="add-select bg-[#F7F8F8] border-none text-[#03071280] font-bold w-[80px] h-[44px] ml-6"
+            class="add-select bg-[#F7F8F8] border-none text-[#03071280] font-bold w-[90px] h-[54px]"
           >
             J<span>2</span>
           </button>
           <button
-            class="add-select bg-[#F7F8F8] border-none text-[#03071280] font-bold w-[80px] h-[44px] ml-6"
+            class="add-select bg-[#F7F8F8] border-none text-[#03071280] font-bold w-[90px] h-[54px]"
           >
             J <span>3</span>
           </button>
           <button
-            class="add-select bg-[#F7F8F8] border-none text-[#03071280] font-bold w-[80px] h-[44px] ml-6"
+            class="add-select bg-[#F7F8F8] border-none text-[#03071280] font-bold w-[90px] h-[54px]"
           >
             J <span>4</span>
           </button>
@@ -557,46 +562,41 @@
       </div>
     </div>
 
-    <div class="ticket-right">
-      <h1 class="border-dashed">Select Your Seat</h1>
+    <div class="ticket-right p-8">
+      <h1 class="font-semibold mb-4 text-2xl border-b-2 border-dashed pb-8">Select Your Seat</h1>
 
       <!-- price-count -->
-      <div class="price-count-container bg-[#F7F8F8] rounded-3xl">
-        <div class="seat-class-price flex justify-around mt-16">
-          <h3>
+      <div class="price-count-container bg-[#F7F8F80] rounded-3xl">
+        <div class="seat-class-price flex justify-between mb-4 p-6 border-b-2 border-dashed ">
+          <h3 class="font-semibold text-xl">
             Seat
-            <span id="seat-plus-count" class="text-[#1DD100] font-bold"
+            <span id="seat-plus-count" class="text-[#1DD100] font-bold bg-green-400 text-white p-1 rounded-lg"
               >0</span
             >
           </h3>
-          <h3>Class</h3>
-          <h3>Price</h3>
+          <h3 class="font-semibold text-xl">Class</h3>
+          <h3 class="font-semibold text-xl">Price</h3>
+          <hr>
         </div>
         <!-- daynamic seeat count -->
         <div class="price-container">
-          <div id="seat-dynamic-price" class="grid grid-cols-3">
-            <!-- <h3>C2 <span class="">2</span></h3> -->
-            <!-- // <h3>Economoy</h3> -->
-            <!-- <h3>550</h3> -->
+          <div id="seat-dynamic-price" class="grid grid-cols-3 gap-3 justify-between  p-6 font-semibold text-xl ml-7">
+ 
           </div>
         </div>
-        <!-- <div class="seat-class-price flex justify-around mt-16 hidden">
-          <h3>C2 <span class="">2</span></h3>
-          <h3>Economoy</h3>
-          <h3>550</h3>
-        </div> -->
+
         <hr />
-        <div class="seat-class-price flex justify-around mt-16">
+        <div class="seat-class-price flex justify-between grid grid-cols-2 gap-7 p-8 font-semibold text-xl ">
           <h3>Total Price</h3>
 
           <h3>BDT: <span id="total-taka">0</span></h3>
         </div>
-        <div class="seat-class-price flex mt-16">
+        <div class="seat-class-price flex mt-8">
           <input
             id="coupon-input"
             type="text"
             placeholder="Type here"
-            class="input - bg-blue-200 text-black w-full max-w-xs h-[60px]"
+            class="input  text-black w-full max-w-xs h-[60px] bg-white border-gray-400 "
           />
           <button
             id="coupon-button"
@@ -605,30 +605,30 @@
             Apply
           </button>
         </div>
-        <div class="seat-class-price flex justify-around mt-16">
-          <h3>GrandTotal</h3>
+        <div class="seat-class-price flex  items-center justify-around mt-6">
+          <h3 class="my-8 font-semibold text-xl">GrandTotal</h3>
 
-          <h3>BDT: <span id="grand-taka">0</span></h3>
+          <h3 class="font-semibold text-xl">BDT: <span id="grand-taka">0</span></h3>
         </div>
       </div>
       <!-- contactt-section -->
 
       <div class="contact">
-        <h3 class="mb-4">Passenger Name *</h3>
+        <h3 class="my-8 font-semibold text-xl">Passenger Name *</h3>
         <input
           type="text"
           placeholder="Enter Your Name"
           class="input - bg-white border-[#03071266] text-black w-full max-w-xs h-[60px]"
           mt-4
         />
-        <h3 class="mb-4">Phone Number*</h3>
+        <h3 class="my-8 font-semibold text-xl">Phone Number*</h3>
         <input
           type="number"
           placeholder="Enter your phone number"
           class="input - bg-white border-[#03071266] text-black w-full max-w-xs h-[60px]"
           mt-4
         />
-        <h3 class="mb-4">Email ID*</h3>
+        <h3 class="my-8 font-semibold text-xl">Email ID*</h3>
         <input
           type="email"
           placeholder="Enter your email id"
@@ -636,17 +636,11 @@
           mt-4
         />
         <div class="next-btn mt-4 mb-4">
-          <!-- <button
-            class="btn btn-wide bg-[#1DD100] border-none outline-none text-white font-[24px]"
-          >
-  
-          </button> -->
 
-          <!-- The button to open modal -->
           <a
             id="next-button"
             href="#my_modal_8"
-            class="btn btn-wide bg-[#1DD100] border-none outline-none text-white font-[24px]"
+            class="btn btn-wide w-[53%] bg-[#1DD100] border-none outline-none text-white font-[24px]"
           >
             Next</a
           >
@@ -668,8 +662,8 @@
                 Shortly you will find a confirmation in your email.
               </p>
  
-              <div class="modal-action">
-                <a href="#" class="btn bg-[#27AE60] text-white border-none my-8">
+              <div class="modal-action mx-auto">
+                <a href="#" class="btn bg-[#27AE60] text-white border-none my-8 px-12 py-3">
                 Continue
                 </a>
                </div>
@@ -678,9 +672,9 @@
           </div>
         </div>
 
-        <div class="condition-policy flex justify-around">
-          <a href="#" class="underline">Terms and Conditions</a>
-          <a href="#" class="underline">Cancellation Policy</a>
+        <div class="condition-policy flex justify-between">
+          <a href="#" class="underline text-gray-500">Terms and Conditions</a>
+          <a href="#" class="underline text-gray-500">Cancellation Policy</a>
         </div>
       </div>
     </div>
