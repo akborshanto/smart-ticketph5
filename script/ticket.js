@@ -16,6 +16,7 @@ for (let addSelects of addSelect) {
     /* select-bg */
     const addColor = addSelects.classList.add("bg-green-500");
 
+    
     /* count-minus and plus */
 
     if (countMinus > 0) {
@@ -29,13 +30,24 @@ for (let addSelects of addSelect) {
       "seat-plus-count"
     ).innerText = countPlus);
     /* opt */
-    if (countPlus > 40) {
+    if (countPlus > 40 ) {
       countPlus += 1;
-      alert("dklsajf");
+     // alert("TICKET FULL");
       const countPlusDisplay = (document.getElementById(
         "seat-plus-count"
       ).innerText = countPlus);
     }
+/* bg-remove */
+if( countPlus > 4  ){
+   
+    const addColor = addSelects.classList.remove("bg-green-500");
+  //  const disabled=addSelects.classList.add('disabled')
+  //  document.getElementById("addSelect").disabled = true;
+
+
+}
+
+
 
     /* dynamic-seat-count */
     const addSelectss = addSelects.innerText;
@@ -53,36 +65,35 @@ for (let addSelects of addSelect) {
     seatPrice.innerHTML = 550;
     document.getElementById("seat-dynamic-price").appendChild(seatPrice);
 
-    /* Price-calculate */
+    /* Price-calculate ===== somossa ============*/
 
     perTicketTaka += 550;
-    /* total-taka */
+
+
+
+
+    /* total-taka DISPLAy */
     const totalTakaDisplay = (document.getElementById("total-taka").innerText =
       perTicketTaka);
-    const grandTotalDisplay = (document.getElementById("grand-taka").innerText =
+    let grandTotalDisplay = (document.getElementById("grand-taka").innerText =
       perTicketTaka);
 
     /* grans-taka */
 
-    /* next-button */
 
-    const enable = (document.getElementById("next-button").disabled = true);
-
-
-
-
+  
 
   });
 
-  if( addSelects === 4){
-removeEventListener()
-    
-  }
+
+
 
 
 }
 /* =============================================================== */
 /* next-button */
+
+
 
 /* coupone-input */
 const couponButton = document.getElementById("coupon-button");
@@ -90,14 +101,29 @@ const couponButton = document.getElementById("coupon-button");
 couponButton.addEventListener("click", function () {
   let couponInput = document.getElementById("coupon-input").value.toUpperCase();
 
-  if (couponInput === "NEW15" ) {
+  if (couponInput === "NEW15" || couponInput === "COUPLE 20" ) {
+
+
+
+
+
     document.getElementById("coupon-input").classList.add("hidden");
     couponButton.classList.add("hidden");
   }else{
+
+  
     alert("invalid coupon")
+    document.getElementById("coupon-input").value = ""
   } 
 
 
 
+
+
+
 });
-/* bonsu hidden */
+
+
+   
+
+
