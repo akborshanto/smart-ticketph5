@@ -4,9 +4,8 @@
 
 /* button-seat */
 const allBtn = document.getElementsByClassName("add-select");
-let count = 0;
 let totalPrice=0;
-let countMinus=0;
+
 for( const btn of allBtn){
 
 
@@ -14,22 +13,38 @@ for( const btn of allBtn){
   btn.addEventListener('click',function(e){
     e.target.setAttribute("disabled", true);
     const addColor = btn.classList.add("bg-green-500");
- let seatCount=count= count + 1;
 
 
 
- setInnerText('seat-plus-count',count)
+
+
 
 /* jotil */
-/* decreamint */
+/* increamint */
 
+const currentCount=document.getElementById('seat-plus-count').innerText;
+
+const parseNum=parseInt(currentCount)
+const newNum=parseNum + 1;
+/* decrement */
+const decCount=document.getElementById('seat-count-minus').innerText;
+const parseDec=parseInt(decCount);
+let newDec=newNum - 1;
+
+//console.log(newDec)
 /* increamnet */
-if (seatCount > 4 ) {
+if (newNum > 4  ) {
 
   const removeColor = btn.classList.remove("bg-green-500");
   document.getElementById("addSelect").setAttribute("disabled", true);
  
 }
+
+setInnerText('seat-count-minus',newDec)
+
+setInnerText('seat-plus-count',newNum)
+
+
 
 
 
@@ -67,8 +82,11 @@ couponButton.addEventListener("click", function () {
 let couponInput = document.getElementById("coupon-input").value;
   if (couponInput === "NEW15" ) {
 /* coupon */
-const grandTotal15= totalPrice * 15 / 100;
-setInnerText('grand-taka',grandTotal15)
+const discount= totalPrice * 15 / 100;
+const totalGrand= totalPrice - discount;
+
+//setInnerText('seat-dynamic-prices',discount)
+setInnerText('grand-taka',totalGrand)
 
 
     document.getElementById("coupon-input").classList.add("hidden");
@@ -77,9 +95,14 @@ setInnerText('grand-taka',grandTotal15)
   }else if(couponInput === "Couple 20"){
 
 
-    const grandTotal20= totalPrice * 20 / 100;
-    setInnerText('grand-taka',grandTotal20)
+    const discount= totalPrice * 20 / 100;
+    const totalGrand= totalPrice - discount;
 
+   // setInnerText('seat-dynamic-prices',discount)
+    setInnerText('grand-taka',totalGrand)
+
+  
+    setInnerText('seat-dynamic-prices',discount)
     document.getElementById("coupon-input").classList.add("hidden");
     couponButton.classList.add("hidden");
 
