@@ -102,7 +102,7 @@ setInnerText('grand-taka',totalGrand)
     setInnerText('grand-taka',totalGrand)
 
   
-    setInnerText('seat-dynamic-prices',totalGrand)
+    //setInnerText('seat-dynamic-prices',totalGrand)
     document.getElementById("coupon-input").classList.add("hidden");
     couponButton.classList.add("hidden");
 
